@@ -129,27 +129,7 @@ curl http://localhost:8000/api/v1/bookings/?email=test@example.com
 
 ---
 
-## ❌ Error Responses
 
-* Booking a full class:
-
-  ```json
-  { "non_field_errors": ["No available slots"] }
-  ```
-
-* Booking a past class:
-
-  ```json
-  { "non_field_errors": ["Cannot book a past class"] }
-  ```
-
-* Missing required field:
-
-  ```json
-  { "client_email": ["This field is required."] }
-  ```
-
----
 
 ## ✅ Running Tests
 
